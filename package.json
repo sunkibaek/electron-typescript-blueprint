@@ -4,7 +4,9 @@
   "main": "dist/main.js",
   "license": "MIT",
   "dependencies": {
-    "electron": "^3.0.0-beta.1"
+    "electron": "^3.0.0-beta.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   },
   "scripts": {
     "cleanup": "rm -rf ./dist",
@@ -12,10 +14,13 @@
     "start": "yarn build && electron ."
   },
   "devDependencies": {
+    "@types/react": "^16.4.1",
+    "@types/react-dom": "^16.0.6",
     "prettier": "^1.13.5",
     "tslint": "^5.10.0",
     "tslint-config-prettier": "^1.13.0",
-    "tslint-microsoft-contrib": "^5.0.3",
+    "tslint-eslint-rules": "^5.3.1",
+    "tslint-react": "^3.6.0",
     "typescript": "^2.9.2"
   }
 }

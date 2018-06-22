@@ -1,11 +1,8 @@
-/**
- * electron entry point
- */
 import { app, BrowserWindow } from "electron";
 
 let win: BrowserWindow | null;
 
-function createWindow(): void {
+const createWindow = (): void => {
   win = new BrowserWindow({ width: 1024, height: 768 });
 
   win.loadFile("index.html");
@@ -13,7 +10,7 @@ function createWindow(): void {
   win.on("closed", () => {
     win = null;
   });
-}
+};
 
 app.on("ready", createWindow);
 
